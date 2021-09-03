@@ -46,5 +46,22 @@ class ImageTestClass(TestCase):
     def test_delete_image(self):
         self.mumo.delete_image()
         image = Image.objects.all()
-        self.assertTrue(len(image)==0)         
+        self.assertTrue(len(image)==0)       
+        
+    def test_update_image(self):
+        self.mumo.save_image()
+        self.mumo.update_image(self.mumo.id,'photos/me.png')    
+        image = Image.objects.filter(photo_image='photos/me.png')
+        self.assertTrue(len(image)>0)  
+        
+    def test_get_image_by_id(self):
+        image_k=self.mumo.get_image_by_id(self.mumo.id)
+        image=Image.objects.filter(id=self.mumo.id)    
+        self.assertTrue(image_k.query,image.query)
+        
+    def tearDown(self):
+        Image.objects.all().delete()
+        Location.objects.all().delete() 
+        Category.objects.all().delete()    
+   
         
