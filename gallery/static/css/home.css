@@ -1,0 +1,42 @@
+.container {
+    background-color:  #002366;
+    -webkit-animation: color-change-2x 2s linear infinite alternate both;
+	        animation: color-change-2x 2s linear infinite alternate both;
+}
+@-webkit-keyframes color-change-2x {
+    0% {
+      background: #19dcea;
+    }
+    100% {
+      background: #b22cff;
+    }
+  }
+  @keyframes color-change-2x {
+    0% {
+      background: #19dcea;
+    }
+    100% {
+      background: #b22cff;
+    }
+    
+  }
+  @keyframes color-change-2x {
+    0% {
+      background:   #002366;
+    }
+    100% {
+      background: #ff2c5a;
+    }
+    
+  }
+  
+
+.gallery {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    max-height: 17vw;
+    min-height: 17vw;
+    max-width:17vw;
+    min-width: 17vw;
+
+}
