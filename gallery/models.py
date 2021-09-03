@@ -44,7 +44,7 @@ class Image(models.Model):
     
     @classmethod
     def update_image(cls,id,value):
-        image = cls.objects.filter(id=id).update(image=value)
+        image = cls.objects.filter(id=id).update(photo_image=value)
     
     @classmethod
     def get_image_by_id(cls,id):
