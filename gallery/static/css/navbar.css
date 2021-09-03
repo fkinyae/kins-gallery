@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Besley&display=swap');
+
+body{
+    font-family: 'Besley', serif;
+}
+
+.navbar {
+    background-color: #002366;
+
+}
+
+.navbar-brand {
+    color: white;
+}
