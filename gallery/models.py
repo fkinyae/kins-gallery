@@ -51,6 +51,11 @@ class Image(models.Model):
         image=cls.objects.filter(id=id).all()
         return image
     
+    @classmethod
+    def get_all_images(cls):
+        images = cls.objects.all()
+        return images
+    
     class Meta:
         ordering=['date_posted'] 
 
