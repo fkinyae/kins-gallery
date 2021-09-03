@@ -23,4 +23,28 @@ class LocationTestClass(TestCase):
     def test_save_method(self):
         self.kinyae.save_location()
         locations = Location.objects.all()
-        self.assertTrue(len(locations)>0)           
+        self.assertTrue(len(locations)>0)        
+        
+class ImageTestClass(TestCase):
+    def setUp(self):
+        self.location = Location(location='Nairobi')
+        self.location.save_location()
+
+        self.category = Category(category='love')
+        self.category.save_category()
+        
+        self.mumo = Image(id=1,photo_image='kin.jpg',image_name='test',image_description='test image',location_id=self.location,category_id=self.category,date_posted='2021-04-12')   
+        
+    def test_instance(self):
+        self.assertTrue(isinstance(self.mumo,Image))        
+        
+    def test_save_method(self):
+        self.mumo.save_image()
+        images = Image.objects.all()
+        self.assertTrue(len(images)>0)    
+        
+    def test_delete_image(self):
+        self.mumo.delete_image()
+        image = Image.objects.all()
+        self.assertTrue(len(image)==0)         
+        
