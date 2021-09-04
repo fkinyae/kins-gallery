@@ -21,6 +21,12 @@ class Location(models.Model):
     def save_location(self):
         self.save()
         
+    
+    @classmethod
+    def get_locations(cls):
+        locations=cls.objects.all()
+        return locations    
+        
     class Meta:
         ordering=['location']        
         
