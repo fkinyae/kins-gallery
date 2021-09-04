@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 .container {
     background-color:  #002366;
     -webkit-animation: color-change-2x 2s linear infinite alternate both;
@@ -39,4 +40,17 @@
     max-width:17vw;
     min-width: 17vw;
 
+}
+
+.text_image {
+    color: #fff;
+    font-family: 'Caveat', cursive;
+}
+
+.line {
+  background-color: white;
+}
+
+.locations {
+  float: left;
 }
