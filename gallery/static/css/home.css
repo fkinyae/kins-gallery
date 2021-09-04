@@ -9,7 +9,7 @@
       background: #19dcea;
     }
     100% {
-      background: #b22cff;
+      background: #1a258f;
     }
   }
   @keyframes color-change-2x {
@@ -26,7 +26,7 @@
       background:   #002366;
     }
     100% {
-      background: #ff2c5a;
+      background: #4330ba;
     }
     
   }
@@ -53,4 +53,11 @@
 
 .locations {
   float: left;
+}
+
+#location_btn {
+  color: white;
+  margin-left: 20px;
+  float: right;
+
 }
