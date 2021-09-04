@@ -58,6 +58,11 @@ class Image(models.Model):
         return image
     
     @classmethod
+    def get_image_by_location(cls,location):
+        location=Image.objects.filter(location_id_id=location).all()
+        return location
+    
+    @classmethod
     def get_all_images(cls):
         images = cls.objects.all()
         return images
