@@ -11,12 +11,28 @@
 {{block.super}}
 
 <div class="container">
+
+    <hr class="line">
+
+    <div class="row">
+
+        {% for location in locations  %}
+
+        <p>{{location.location}}</p>    
+        
+        {% endfor %}
+
+    </div>
+
+    <hr class="line">
+
     <div class="row text-center">
         {% for image in images %}
 
         <div class="col-md-3">
 
                 <img src="{{image.photo_image.url}}" alt="image of {image.image_name}" class="img-fluid gallery">
+                <p class="text_image">{{image.image_name}}</p>
 
 
         </div>
