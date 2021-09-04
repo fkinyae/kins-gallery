@@ -4,7 +4,8 @@ from django.conf.urls.static import static
 from django.conf import settings
 
 urlpatterns = [
-    path('', views.home, name='home')
+    path('', views.home, name='home'),
+    path('image_location/<location>/',views.image_by_location,name='image_by_location'),
     ]
 
 if settings.DEBUG:
