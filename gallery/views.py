@@ -13,5 +13,6 @@ def all_locations(request):
     return render(request,'all_gallery/home.html',{"locations":locations})
 
 def image_by_location(request,location):
+    locations=Location.get_locations()
     images=Image.get_image_by_location(location)
-    return render(request,'all_gallery/image_location.html',{"images":images,"location":location})
+    return render(request,'all_gallery/image_location.html',{"images":images,"location":location,"locations":locations})
