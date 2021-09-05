@@ -41,6 +41,18 @@
     min-width: 17vw;
 
 }
+.modal-body {
+  background-color:  #4330ba !important;
+  color: white;
+}
+.modal-title {
+  font-weight: bold;
+
+}
+
+.details {
+  margin-top: 10px;
+}
 
 .text_image {
     color: #fff;
