@@ -34,7 +34,7 @@
         <div class="col-md-3">
 
             <a data-toggle="modal" data-target="#{{image.id}}">
-                <img src="{{image.photo_image.url}}" alt="image of {image.image_name}" class="img-fluid gallery" style="display: none">
+                <img src="{{image.photo_image.url}}" alt="image of {image.image_name}" class="img-fluid gallery">
             </a>
 
                 <p class="text_image">{{image.image_name}}</p>
@@ -59,7 +59,7 @@
                             <p class="imgdesc">{{image.image_description}}</p>
                             Photo-Image Link.
                             <input class="form-control input-lg" type="text"
-                                   value="{{image.photo_image.url}}" id="{{image.id}}">
+                                   value="{{image.photo_image.url}}" id="{{image.id}}" style="display: none">
                             <button class="btn btn-success btn-sm copy-btn" data-hex="{{image.photo_image.url}}">Copy</button>
 
                             </div>      
